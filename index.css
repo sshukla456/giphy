@@ -1,0 +1,219 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: grey;
+}
+
+/* ======= Navbar ========= */
+.giphy-main {
+  height: 60px;
+}
+
+.head {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 1.5 rem;
+  margin-top: 17px;
+}
+.nav-link {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 12px;
+}
+.active {
+  font-weight: bold;
+  border-width: 0px 0px 3px 0px;
+  border-style: solid;
+  border-color: green;
+}
+.nav-item:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: green;
+}
+
+/* ======== Carousel ======= */
+.carousel {
+  background-image: url("Images/Black-Background-Images.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.carousel-item {
+  height: 40vh;
+  min-height: 300px;
+}
+.carousel-caption {
+  text-align: center;
+}
+.hello-giphy {
+  width: 100%;
+  border-radius: 40px;
+}
+.hello-giphy:hover {
+  transform: scale(1.1);
+}
+.page-link {
+  width: 15%;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 50px;
+}
+.slide1-div,
+.slide4-div {
+  margin-bottom: 90px;
+}
+
+@media (max-width: 991px) {
+  .nav-item {
+    text-align: center;
+    width: 20%;
+    margin: 0 40%;
+  }
+  .carousel-caption {
+    margin-bottom: 50px;
+  }
+  .hello-giphy {
+    height: 40vh;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+  .page-link {
+    border-radius: 20px;
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    margin-bottom: 60px;
+  }
+  .hello-giphy {
+    width: 60%;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+  .page-link {
+    border-radius: 20px;
+    width: 25%;
+  }
+}
+@media (max-width: 600px) {
+  .hello-giphy {
+    width: 80%;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+  .page-link {
+    border-radius: 20px;
+    width: 35%;
+  }
+  .carousel-caption {
+    margin-bottom: 80px;
+  }
+}
+
+/********************************************/
+.container {
+  height: 90vh;
+  overflow: scroll;
+  margin-top: 50px;
+  padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+.active {
+  border-color: yellow;
+}
+.data {
+  display: inline-block;
+  margin: 7px;
+  position: relative;
+}
+.data-img {
+  border: 3px solid black;
+  border-radius: 30px;
+  border-radius: 30px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.data-img:hover {
+  transform: scale(1.1);
+  border: 3px solid yellow;
+}
+nav li:hover {
+  cursor: pointer;
+}
+
+.bottom {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.data:hover .data-img {
+  opacity: 0.3;
+}
+
+.data:hover .bottom {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+#toggle-div {
+  position: absolute;
+  right: 0px;
+  color: white;
+}
+
+#search-input {
+  visibility: hidden;
+}
+
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.container::-webkit-scrollbar-thumb {
+  background: #8bb151;
+  border-radius: 10px;
+}
+.container::-webkit-scrollbar-thumb:hover {
+  background: rgb(222, 245, 71);
+}
+
+header {
+  margin-top: 15px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  padding: 2rem 20%;
+}
+
+@media (max-width: 600px) {
+  header > h1 {
+    font-size: 1.4em;
+  }
+  header > h3 {
+    font-size: 1em;
+  }
+}
